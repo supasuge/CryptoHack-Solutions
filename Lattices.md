@@ -1,6 +1,6 @@
 # Linear Independence, Basis, and Vector Properties
 
-We say a set of vectors $ \bf{v}_1, \bf{v}_2, \ldots, \bf{v}_k \in V $ are linearly independent if the only solution to the equation:
+We say a set of vectors $\bf{v}_1, \bf{v}_2, \ldots, \bf{v}_k \in V$ are linearly independent if the only solution to the equation:
 
 $$
 a_1 \cdot \bf{v}_1 + a_2 \cdot \bf{v}_2 + \ldots + a_k \cdot \bf{v}_k = 0
@@ -12,7 +12,7 @@ is for $a_1 = a_2 = \ldots = a_k = 0$.
 
 ---
 
-A **basis** is a set of linearly independent vectors $ \bf{v}_1, \bf{v}_2, \ldots, \bf{v}_n \in V $ such that any vector $ \bf{w} \in V $ can be written as:
+A **basis** is a set of linearly independent vectors $\bf{v}_1, \bf{v}_2, \ldots, \bf{v}_n \in V$ such that any vector $\bf{w} \in V$ can be written as:
 
 $$
 \bf{w} = a_1 \cdot \bf{v}_1 + a_2 \cdot \bf{v}_2 + \ldots + a_k \cdot \bf{v}_n
@@ -22,7 +22,7 @@ The number of elements in the basis is also the **dimension** of the vector spac
 
 ---
 
-We define the **size** of a vector, denoted $ \|\bf{v}\| $, using the inner product of the vector with itself:
+We define the **size** of a vector, denoted $\|\bf{v}\|$, using the inner product of the vector with itself:
 
 $$
 \|\bf{v}\|^2 = \bf{v} \cdot \bf{v}
@@ -40,7 +40,7 @@ A basis is **orthonormal** if it is orthogonal and $\|\bf{v}_i\| = 1$, for all $
 
 ---
 
-That's a lot of stuff, but we'll be needing it. **Time for the flag.** Given the vector $ \bf{v} = (4, 6, 2, 5) $, calculate its size.
+That's a lot of stuff, but we'll be needing it. **Time for the flag.** Given the vector $\bf{v} = (4, 6, 2, 5)$, calculate its size.
 
 ## Vector Size (Norm) Calculation for $v = (4,6,2,5)$
 
