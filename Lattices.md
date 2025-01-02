@@ -6,16 +6,16 @@ $$
 a_1 \cdot \mathbf{v}_1 + a_2 \cdot \mathbf{v}_2 + \ldots + a_k \cdot \mathbf{v}_k = 0
 $$
 
-is for $ a_1 = a_2 = \ldots = a_k = 0 $.
+is for $a_1 = a_2 = \ldots = a_k = 0$.
 
 > 💡 **To visualise this:** Think of a vector directed out of a point. Given a set of linearly independent vectors, the only way to return back to the original point is by moving along the original vector. No combination of any of the other vectors will get you there.
 
 ---
 
-A **basis** is a set of linearly independent vectors $ \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n \in V $ such that any vector $ \mathbf{w} \in V $ can be written as:
+A **basis** is a set of linearly independent vectors $ \bf{v}_1, \bf{v}_2, \ldots, \bf{v}_n \in V $ such that any vector $ \bf{w} \in V $ can be written as:
 
 $$
-\mathbf{w} = a_1 \cdot \mathbf{v}_1 + a_2 \cdot \mathbf{v}_2 + \ldots + a_k \cdot \mathbf{v}_n
+\bf{w} = a_1 \cdot \hbf{v}_1 + a_2 \cdot \hbf{v}_2 + \ldots + a_k \cdot \bf{v}_n
 $$
 
 The number of elements in the basis is also the **dimension** of the vector space.
@@ -46,9 +46,15 @@ That's a lot of stuff, but we'll be needing it. **Time for the flag.** Given the
 
 ## Definition Reminder
 - The **size** (or **norm**) of a vector $v$ in an inner product space is given by:
-  $$\|v\|^2 = v \cdot v.$$
+$$
+\|v\|^2 = v \cdot v.
+
+$$
   This typically implies:
-  $$\|v\| = \sqrt{v \cdot v}.$$
+  
+$$
+\|v\| = \sqrt{v \cdot v}.
+$$
 
 ## Steps to Calculate the Size of $v$
 Given $v = (4,6,2,5)$:
