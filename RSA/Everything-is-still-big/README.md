@@ -12,11 +12,11 @@ while True:
 
 $$
 (3d)^4 > N 
-\;\;\Longrightarrow\;\;
+\Longrightarrow
 81\,d^4 > N
-\;\;\Longrightarrow\;\;
+\Longrightarrow
 d > \sqrt[4]{\frac{N}{81}}
-\;\;\approx\;\;
+\approx\
 \frac{N^{\tfrac14}}{3}.
 $$
 
