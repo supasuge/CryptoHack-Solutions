@@ -1,0 +1,6 @@
+
+cryptography==43.0.1
+fastecdsa
+pwntools==4.13.0
+pycryptodome==3.20.0
+
