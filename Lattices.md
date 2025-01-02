@@ -1,9 +1,9 @@
 # Linear Independence, Basis, and Vector Properties
 
-We say a set of vectors $ \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k \in V $ are linearly independent if the only solution to the equation:
+We say a set of vectors $ \bf{v}_1, \bf{v}_2, \ldots, \bf{v}_k \in V $ are linearly independent if the only solution to the equation:
 
 $$
-a_1 \cdot \mathbf{v}_1 + a_2 \cdot \mathbf{v}_2 + \ldots + a_k \cdot \mathbf{v}_k = 0
+a_1 \cdot \bf{v}_1 + a_2 \cdot \bf{v}_2 + \ldots + a_k \cdot \bf{v}_k = 0
 $$
 
 is for $a_1 = a_2 = \ldots = a_k = 0$.
@@ -15,32 +15,32 @@ is for $a_1 = a_2 = \ldots = a_k = 0$.
 A **basis** is a set of linearly independent vectors $ \bf{v}_1, \bf{v}_2, \ldots, \bf{v}_n \in V $ such that any vector $ \bf{w} \in V $ can be written as:
 
 $$
-\bf{w} = a_1 \cdot \hbf{v}_1 + a_2 \cdot \hbf{v}_2 + \ldots + a_k \cdot \bf{v}_n
+\bf{w} = a_1 \cdot \bf{v}_1 + a_2 \cdot \bf{v}_2 + \ldots + a_k \cdot \bf{v}_n
 $$
 
 The number of elements in the basis is also the **dimension** of the vector space.
 
 ---
 
-We define the **size** of a vector, denoted $ \|\mathbf{v}\| $, using the inner product of the vector with itself:
+We define the **size** of a vector, denoted $ \|\bf{v}\| $, using the inner product of the vector with itself:
 
 $$
-\|\mathbf{v}\|^2 = \mathbf{v} \cdot \mathbf{v}
+\|\bf{v}\|^2 = \bf{v} \cdot \bf{v}
 $$
 
 ---
 
-A **basis is orthogonal** if for a vector basis $ \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n \in V $, the inner product between any two different vectors is zero:
+A **basis is orthogonal** if for a vector basis $\bf{v}_1, \bf{v}_2, \ldots, \bf{v}_n \in V$, the inner product between any two different vectors is zero:
 
 $$
-\mathbf{v}_i \cdot \mathbf{v}_j = 0, \quad i \neq j
+\bf{v}_i \cdot \bf{v}_j = 0, \quad i \neq j
 $$
 
-A basis is **orthonormal** if it is orthogonal and $ \|\mathbf{v}_i\| = 1 $, for all $ i $.
+A basis is **orthonormal** if it is orthogonal and $\|\bf{v}_i\| = 1$, for all $i$.
 
 ---
 
-That's a lot of stuff, but we'll be needing it. **Time for the flag.** Given the vector $ \mathbf{v} = (4, 6, 2, 5) $, calculate its size.
+That's a lot of stuff, but we'll be needing it. **Time for the flag.** Given the vector $ \bf{v} = (4, 6, 2, 5) $, calculate its size.
 
 ## Vector Size (Norm) Calculation for $v = (4,6,2,5)$
 
