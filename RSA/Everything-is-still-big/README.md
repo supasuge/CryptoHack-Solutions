@@ -11,14 +11,15 @@ while True:
 ```
 
 $$
-(3d)^4 > N 
+(3d)^4 > N
 \Longrightarrow
 81\,d^4 > N
 \Longrightarrow
 d > \sqrt[4]{\frac{N}{81}}
-\approx\
-\frac{N^{\tfrac14}}{3}.
+\approx
+\frac{N^{\tfrac{1}{4}}}{3}.
 $$
+
 
 Although the number certainly is isn't tiny, $d$ is significantly smaller than half the size of $\phi(N)$ that would expect with a random RSA key.
 
