@@ -638,8 +638,10 @@ $$
 
 The problem asks for the **inner product** of the new basis vectors:
 
+For example sake, $f$ is our flag here.
+
 $$
-\text{Flag}
+f
 = v_1' \cdot v_2'
 =
 (87502093),(-4053281223)
