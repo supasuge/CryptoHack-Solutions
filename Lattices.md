@@ -593,21 +593,13 @@ Numerically,
 
 so $m \approx \text{round}(56.36) = 56$.
 
-3. **Subtract**  
+3. Subtract  
 
 $$
 v_2 \leftarrow v_2 - 56\,v_1.
 $$
 
-That is,  
-   
-$$
-(846835985, 9834798552)
--
-56 \times (87502093, 123094980)
-=
-\bigl(-4053281223, 2941479672\bigr).
-$$
+$(846835985, 9834798552) - 56 \times (87502093, 123094980) = \bigl(-4053281223, 2941479672\bigr)$
 
 4. **Check norms**:
 - $\|v_1\| \approx 1.51\times 10^8$  
@@ -629,24 +621,19 @@ This ratio is about $0.3$, so $m = 0$.
 
 $$
 v_1' = (87502093, 123094980),\quad
-v_2' = \bigl(-4053281223, 2941479672\bigr).
+v_2' = (-4053281223, 2941479672).
 $$
 
----
 
-## 3) The Flag
+
+# The Flag
 
 The problem asks for the **inner product** of the new basis vectors:
 
 For example sake, $f$ is our flag here.
 
 $$
-f
-= v_1' \cdot v_2'
-=
-(87502093),(-4053281223)
-+
-(123094980),(2941479672).
+f = v_1' \cdot v_2' = (87502093),(-4053281223) + (123094980),(2941479672).
 $$
 
 You can compute this exactly (using big-integer arithmetic). A short Python or Sage snippet:
