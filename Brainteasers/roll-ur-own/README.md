@@ -118,13 +118,8 @@ This runs in $O(256)$ oracle calls plus $O(256)$ modular exponentiations—easil
 
 ## References
 
-* Definition of Sophie Germain and safe primes ([Wikipedia][1])
-* Cryptographic use and Pollard’s $p-1$ consideration for safe primes ([Wikipedia][2])
+* Definition of Sophie Germain and safe primes 
+* Cryptographic use and Pollard’s $p-1$ consideration for safe primes 
 * Chinese Remainder Theorem and lcm‐order argument (standard group‐theory)
 
-::contentReference[oaicite:7]{index=7}
-```
-
-[1]: https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes?utm_source=chatgpt.com "Safe and Sophie Germain primes - Wikipedia"
-[2]: https://en.wikipedia.org/wiki/Pollard%27s_p_%E2%88%92_1_algorithm?utm_source=chatgpt.com "Pollard's p − 1 algorithm - Wikipedia"
 
