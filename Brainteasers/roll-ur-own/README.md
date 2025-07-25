@@ -6,7 +6,7 @@ Edit: This renders perfectly fine in Obsidian.md, idk why github does this shit.
 
 ## Challenge overview
 
-In this challenge, let $N = p\,q$, where $p$ and $q$ are *safe primes*, i.e.\ $p = 2p' + 1$ and $q = 2q' + 1$ with $p',q'$ themselves prime.  
+In this challenge, let $N = p\,q$, where $p$ and $q$ are *safe primes*, i.e. $p = 2p' + 1$ and $q = 2q' + 1$ with $p',q'$ themselves prime.  
 - [Source](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes)
 
 A *Sophie Germain prime* is a prime $p$ such that $2p + 1$ is also prime; the number $2p+1$ is then called a *safe prime*. Sophie Germain discovered this theorem while trying to prove Fermat's Last Theorem.
@@ -43,22 +43,18 @@ must have $p\mid x$, $p\mid y$, or $p\mid z$, ruling out the “first case” of
 
 Let $p=2p'+1$, $q=2q'+1$.  Then
 
-$$
-\varphi(N) \;=\; (p-1)(q-1)\;=\;2p'\,\times 2q'\;=\;4\,p'\,q'.
-$$
+$$\varphi(N) = (p-1)(q-1) = 2p',\times 2q' = 4,p',q'$$
 
 Choose a generator $g$ of the prime‑order subgroups modulo $p$ and $q$.  Because each safe prime’s multiplicative group is cyclic of order $2p'$ (resp.\ $2q'$), a primitive root $g$ satisfies
 
-$$
-\text{ord}_p(g) \;=\;2p',\quad
-\text{ord}_q(g)\;=\;2q'.
-$$
+$$\text{ord}_p(g)  = 2p',\quad
+\text{ord}_q(g) = 2q'.$$
 
 By the Chinese Remainder Theorem, the order of $g$ modulo $N$ is
 
 $$
-\mathrm{lcm}(2p',2q') \;=\;2\,p'\,q'
-\;=\;\frac{\varphi(N)}{2}.
+\mathrm{lcm}(2p',2q') = 2\,p'\,q'
+= \frac{\varphi(N)}{2}.
 $$
 
 ---
@@ -76,7 +72,7 @@ else:
     return random x ∈ [1,N−1]
 ````
 
-* Any $x\in\langle g\rangle$ satisfies $x^{\varphi(N)/2}\equiv1\pmod N$.
+* Any $x \in \langle g \rangle$ satisfies $x^{\varphi(N)/2}\equiv1\pmod N$.
 * A uniformly random $x\notin\langle g\rangle$ will, with overwhelming probability, satisfy $x^{\varphi(N)/2}\equiv -1\pmod N$, since $(\mathbb Z/N)^\times/\langle g\rangle$ has order 2.
 
 Thus the **bit‐recovery test** is simply:
