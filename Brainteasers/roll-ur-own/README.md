@@ -2,17 +2,7 @@
 
 Edit: This renders perfectly fine in Obsidian.md, idk why github does this shit. sorry but am not fixing all the latex syntax errors, fuck it. 
 
-
 - Author: [supasuge](https://github.com/supasuge)
-
-
-
-## Challenge overview
-
-In this challenge, let $N = pq$, where $p$ and $q$ are supposedly *safe primes* i.e., $p=2p'+1$ and $2 = q'+1$ for primes $p',q'$. 
-- [Source](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes)
-
-Safe prime's are also known as Sophie Germain Prime's if $2p+1$ is also prime. One attempt from Germain to prove Fermat's Last Theorem was to let $p$ be a prime number of the *form* $8k+7$ and to let $n = p-1$. In this case $x^n + y^n = z^n$ is unsolvable. Germain's proof remained unfinished, though through her attempts to prove Fermat's Last Theorem, Germain developed a result now known as Germain's Theorem which sates that if $p$ is an odd prime and $2p+1$ is also prime, then $p$ must divide $x, y, \text{or} z$. Otherwise $x^n +$
 
 ## Challenge overview
 
