@@ -1,5 +1,8 @@
 # Roll ur own Solution
 
+Edit: This renders perfectly fine in Obsidian.md, idk why github does this shit. sorry but am not fixing all the latex syntax errors, fuck it. 
+
+
 - Author: [supasuge](https://github.com/supasuge)
 
 
