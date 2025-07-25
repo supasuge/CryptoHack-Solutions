@@ -14,27 +14,20 @@ In this challenge, let $N = pq$, where $p$ and $q$ are supposedly *safe primes* 
 
 Safe prime's are also known as Sophie Germain Prime's if $2p+1$ is also prime. One attempt from Germain to prove Fermat's Last Theorem was to let $p$ be a prime number of the *form* $8k+7$ and to let $n = p-1$. In this case $x^n + y^n = z^n$ is unsolvable. Germain's proof remained unfinished, though through her attempts to prove Fermat's Last Theorem, Germain developed a result now known as Germain's Theorem which sates that if $p$ is an odd prime and $2p+1$ is also prime, then $p$ must divide $x, y, \text{or} z$. Otherwise $x^n +$
 
-
-# Roll ur own Solution
-
-- Author: [supasuge](https://github.com/supasuge)
-
 ## Challenge overview
 
 In this challenge, let $N = p\,q$, where $p$ and $q$ are *safe primes*, i.e.\ $p = 2p' + 1$ and $q = 2q' + 1$ with $p',q'$ themselves prime.  
 - [Source](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes)
 
-A *Sophie Germain prime* is a prime $p$ such that $2p + 1$ is also prime; the number $2p+1$ is then called a *safe prime* .  
+A *Sophie Germain prime* is a prime $p$ such that $2p + 1$ is also prime; the number $2p+1$ is then called a *safe prime*. Sophie Germain discovered this theorem while trying to prove Fermat's Last Theorem.
 One early attempt by Sophie Germain to prove Fermat’s Last Theorem was to let $p$ be a prime of the form $8k+7$ and take $n = p-1$.  In that case  
 
-$$
-x^n + y^n = z^n
-$$
+$x^n + y^n = z^n$
+
 is unsolvable.  Although her proof remained unfinished, she proved what is now called *Germain’s Theorem*: if $p$ is an odd prime and $2p+1$ is also prime, then any solution to  
 
-$$
-x^n + y^n = z^n,\quad n=p-1,
-$$
+$x^n + y^n = z^n,\quad n=p-1,$
+
 must have $p\mid x$, $p\mid y$, or $p\mid z$, ruling out the “first case” of FLT for such primes.
 
 ---
