@@ -24,16 +24,18 @@ Safe prime's are also known as Sophie Germain Prime's if $2p+1$ is also prime. O
 In this challenge, let $N = p\,q$, where $p$ and $q$ are *safe primes*, i.e.\ $p = 2p' + 1$ and $q = 2q' + 1$ with $p',q'$ themselves prime.  
 - [Source](https://en.wikipedia.org/wiki/Safe_and_Sophie_Germain_primes)
 
-A *Sophie Germain prime* is a prime $p$ such that $2p + 1$ is also prime; the number $2p+1$ is then called a *safe prime* :contentReference[oaicite:0]{index=0}.  
+A *Sophie Germain prime* is a prime $p$ such that $2p + 1$ is also prime; the number $2p+1$ is then called a *safe prime* .  
 One early attempt by Sophie Germain to prove Fermat’s Last Theorem was to let $p$ be a prime of the form $8k+7$ and take $n = p-1$.  In that case  
+
 $$
 x^n + y^n = z^n
 $$
 is unsolvable.  Although her proof remained unfinished, she proved what is now called *Germain’s Theorem*: if $p$ is an odd prime and $2p+1$ is also prime, then any solution to  
+
 $$
 x^n + y^n = z^n,\quad n=p-1,
 $$
-must have $p\mid x$, $p\mid y$, or $p\mid z$, ruling out the “first case” of FLT for such primes :contentReference[oaicite:1]{index=1}.
+must have $p\mid x$, $p\mid y$, or $p\mid z$, ruling out the “first case” of FLT for such primes.
 
 ---
 
@@ -42,31 +44,35 @@ must have $p\mid x$, $p\mid y$, or $p\mid z$, ruling out the “first case” of
 1. **Sophie Germain prime**  
    A prime $p$ with $2p+1$ also prime.  
    _Examples:_ $p=11$ is Sophie Germain because $2\cdot11+1=23$ is prime.  
-   Conjectured infinitely many exist, but unproven :contentReference[oaicite:2]{index=2}.
+   Conjectured infinitely many exist, but unproven.
 
 2. **Safe prime**  
    A prime $q$ such that $(q-1)/2$ is prime.  Equivalently, $q=2p+1$ for some Sophie Germain prime $p$.  
-   Safe primes are prized in cryptography because the multiplicative group $(\mathbb Z/q\mathbb Z)^\times$ then has a large prime‐order subgroup of order $(q-1)/2$ :contentReference[oaicite:3]{index=3}.
+   Safe primes are prized in cryptography because the multiplicative group $(\mathbb Z/q\mathbb Z)^\times$ then has a large prime‐order subgroup of order $(q-1)/2$ .
 
 3. **Applications in cryptography**  
    - Diffie–Hellman: choosing a safe‑prime modulus ensures the prime‐order subgroup is as large as possible relative to $q$.  
-   - Pollard’s $p-1$ factoring method performs worst when $p-1$ and $q-1$ each have a large prime factor, as is the case for safe primes :contentReference[oaicite:4]{index=4}.
+   - Pollard’s $p-1$ factoring method performs worst when $p-1$ and $q-1$ each have a large prime factor, as is the case for safe primes.
 
 ---
 
 ## Key algebraic properties
 
 Let $p=2p'+1$, $q=2q'+1$.  Then
+
 $$
 \varphi(N) \;=\; (p-1)(q-1)\;=\;2p'\,\times 2q'\;=\;4\,p'\,q'.
 $$
 
 Choose a generator $g$ of the prime‑order subgroups modulo $p$ and $q$.  Because each safe prime’s multiplicative group is cyclic of order $2p'$ (resp.\ $2q'$), a primitive root $g$ satisfies
+
 $$
 \text{ord}_p(g) \;=\;2p',\quad
 \text{ord}_q(g)\;=\;2q'.
 $$
+
 By the Chinese Remainder Theorem, the order of $g$ modulo $N$ is
+
 $$
 \mathrm{lcm}(2p',2q') \;=\;2\,p'\,q'
 \;=\;\frac{\varphi(N)}{2}.
@@ -106,10 +112,11 @@ Each query leaks exactly one bit of the flag.
 1. **Compute** $\varphi(N)/2 = 2p'q'$.
 2. **For** $i=0$ to $255$:
 
-   * Send `{"option":"get_bit","i":"i"}`
-   * Parse the hex response $x$.
-   * Compute $x^{\varphi(N)/2}\bmod N$.
-   * Record bit = 1 if result = 1, else 0.
+* Send `{"option":"get_bit","i":"i"}`
+* Parse the hex response $x$.
+* Compute $x^{\varphi(N)/2}\bmod N$.
+* Record bit = $1$ if result = $1$, else $0$.
+
 3. **Reassemble** the 256 bits into 32 bytes (little‑endian within each byte) to recover the ASCII flag.
 
 This runs in $O(256)$ oracle calls plus $O(256)$ modular exponentiations—easily done in a second or two in Python.
@@ -121,5 +128,3 @@ This runs in $O(256)$ oracle calls plus $O(256)$ modular exponentiations—easil
 * Definition of Sophie Germain and safe primes 
 * Cryptographic use and Pollard’s $p-1$ consideration for safe primes 
 * Chinese Remainder Theorem and lcm‐order argument (standard group‐theory)
-
-
