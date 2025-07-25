@@ -98,7 +98,7 @@ Each query leaks exactly one bit of the flag.
 
 3. **Reassemble** the 256 bits into 32 bytes (little‑endian within each byte) to recover the ASCII flag.
 
-This runs in $O(256)$ oracle calls plus $O(256)$ modular exponentiations—easily done in a second or two in Python.
+This runs in $O(256)$ oracle calls plus $O(256)$ modular exponentiations easily done in a second or two in Python.
 
 ---
 
